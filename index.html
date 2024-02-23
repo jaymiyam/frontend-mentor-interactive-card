@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="image-cont">
+      <picture>
+        <source media="(max-width: 375px)" srcset="images/bg-main-mobile.png" />
+        <source
+          media="(min-width: 376px)"
+          srcset="images/bg-main-desktop.png"
+        />
+        <img src="images/bg-main-desktop.png" alt="bg desktop" />
+      </picture>
+    </div>
+    <div class="card-front-cont">
+      <div class="circle-fill"></div>
+      <div class="circle-outline"></div>
+      <img
+        src="images/bg-card-front.png"
+        alt="card front"
+        class="card-front-image"
+      />
+      <span class="text--cardnumber">1234 5678 9123 4567</span>
+      <span class="text--cardholder">Jance appleseed</span>
+      <div class="text--exp">
+        <span class="text--exp-month">12</span><span>/</span
+        ><span class="text--exp-year">27</span>
+      </div>
+    </div>
+    <div class="card-back-cont">
+      <img
+        src="images/bg-card-back.png"
+        alt="card back"
+        class="card-back-image"
+      />
+      <span class="text--cvc">889</span>
+    </div>
+    <div class="form-cont">
+      <form class="form">
+        <div class="form-control form__cardholder">
+          <label for="cardholder">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            name="cardholder"
+            id="cardholder"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <p class="alert-message"></p>
+        </div>
+        <div class="form-control form__cardnumber">
+          <label for="cardnumber">CARD NUMBER</label>
+          <input
+            type="string"
+            name="cardnumber"
+            id="cardnumber"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="alert-message"></p>
+        </div>
+
+        <div class="form-control form__exp">
+          <label for="exp-month">EXP. DATE (MM.YY)</label>
+          <div>
+            <input
+              type="text"
+              name="exp-month"
+              id="exp-month"
+              placeholder="MM"
+            />
+            <input type="text" name="exp-year" id="exp-year" placeholder="YY" />
+            <p class="alert-message"></p>
+          </div>
+        </div>
+        <div class="form-control form__cvc">
+          <label for="cvc">CVC</label>
+          <input type="text" name="cvc" id="cvc" placeholder="e.g. 123" />
+          <p class="alert-message"></p>
+        </div>
+
+        <button class="btn">Confirm</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
