@@ -42,8 +42,8 @@ body {
   width: 44.7rem;
   height: 24.5rem;
   position: absolute;
-  top: 10rem;
-  left: 20rem;
+  top: 10%;
+  left: 10%;
   padding: 2rem;
 }
 
@@ -105,8 +105,8 @@ body {
   width: 44.7rem;
   height: 24.5rem;
   position: absolute;
-  top: 38rem;
-  left: 25rem;
+  top: 50%;
+  left: 20%;
   padding: 2rem;
 }
 
